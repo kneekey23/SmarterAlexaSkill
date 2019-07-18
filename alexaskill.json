@@ -1,0 +1,69 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "sneaker release",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "sneakerIntent",
+                    "slots": [
+                        {
+                            "name": "brandName",
+                            "type": "brandName"
+                        }
+                    ],
+                    "samples": [
+                        "{brandName}",
+                        "When is {brandName} dropping a new pair",
+                        "Tell me when {brandName} will release shoes",
+                        "When will {brandName} release the next version of their shoe"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "brandName",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "reebok"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "adidas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nike",
+                                "synonyms": [
+                                    "nike inc."
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
